@@ -1,0 +1,124 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+html{
+}
+body{
+  /* margin: 15px; */
+  width: 100vw;
+  height: 100vh;
+  background-color: whitesmoke;
+  box-sizing: border-box;
+}
+.mid_center{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  
+}
+.tot, .body_inner, .header_inner, .footer_inner{
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.tot{
+  width: 100%;
+  height: 100%;
+
+  
+}/* 전체 끝 */
+/* 헤더 시작 */
+.h_i_div1, .h_i_div2,.h_i_div3{
+  width: 95%;
+  height: 32%;
+  
+}
+.header_inner{
+  width: 100%;
+  height: 20%;
+  background-color: black;
+  
+}
+.h_i_div1{
+  background-color: aqua;
+}
+.h_i_div2{
+  background-color: yellow;
+}
+.h_i_div3{
+  background-color: darkviolet;
+}
+/* 헤더 끝 */
+
+/* 바디시작 */
+.body_inner{
+  width: 100%;
+  height: 65%;
+  background-color: darkgray;
+}
+.b_i_div1,.b_i_div2{
+  width: 95%;
+  height: 49%;
+}
+.b_i_div1{
+  background-color: brown;
+}
+.b_i_div2{
+  background-color: darkolivegreen;
+  
+}
+/* 바디 끝 */
+
+/* 푸터시작 */
+.footer_inner{
+  width: 100%;
+  height: 15%;
+  background-color:deepskyblue;
+  
+}
+.f_i_div1{
+  width: 95%;
+  height: 95%;
+  background-color: darkorange;
+
+}
+/* 푸터 끝 */
+
+/* 데스크탑 시작 */
+@media (min-width:601px){
+  .body_inner, .header_inner, .footer_inner{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .h_i_div1, .h_i_div2, .h_i_div3{
+    width: 33%;
+    height: 95%;
+  }
+  .b_i_div1, .b_i_div2{
+    width: 49%;
+    height: 99%;
+  }
+}/* 데스크탑 끝 */
+
+/* 인스타버전 */
+@media (max-width:499px) {
+  .header_inner{
+    flex-direction: row;
+    height: 10%;
+  }
+  .h_i_div1, .h_i_div2,.h_i_div3{
+    border-radius: 100%;
+    height: 90%;
+    width: 31%;
+  }
+  .body_inner{
+    height: 80%;
+  }
+  .footer_inner{
+    height: 10%;
+  }
+}
